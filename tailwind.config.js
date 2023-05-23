@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        peavault: {
+          primary: "#8FFF00",
+        },
+      },
+      fontFamily: {
+        "oatmeal-sans": [
+          "var(--font-oatmeal-sans)",
+          "Oatmeal Sans",
+          "sans-serif",
+        ],
+        "circular-std": ["var(--font-circular-std)"],
+        // sans: ["var(--font-oatmeal-sans)"],
       },
     },
   },
