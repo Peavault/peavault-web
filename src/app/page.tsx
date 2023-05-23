@@ -1,10 +1,23 @@
 import Header from "@/components/layout/header";
 import Image from "next/image";
 import PeavaultSlash from "@/assets/images/peavault-slash.svg";
+import PeavaultSlashBlack from "@/assets/images/peavault-slash-black.svg";
 import AboutPeavault from "@/assets/images/about-peavault.png";
+import CheckIcon from "@/assets/icons/check-icon.svg";
 import HowItWorks from "@/assets/images/how-it-works.svg";
+import PictureMosaic from "@/assets/images/picture-mosaic.png";
+import BannerPerson from "@/assets/images/banner-person.png";
+import TwitterIcon from "@/assets/icons/twitter-icon.svg";
+import LinkedInIcon from "@/assets/icons/linkedin-icon.svg";
+import FacebookIcon from "@/assets/icons/facebook-icon.svg";
+import GithubIcon from "@/assets/icons/github-icon.svg";
+import BehanceIcon from "@/assets/icons/behance-icon.svg";
 import Footer from "@/components/layout/footer";
-import { FeaturesData, HowItWorksData } from "@/constants/overviewData";
+import {
+  FeaturesData,
+  HowItWorksData,
+  IndustriesData,
+} from "@/constants/overviewData";
 
 export default function Home() {
   return (
@@ -37,11 +50,11 @@ export default function Home() {
       </section>
       <section
         style={{
-          boxShadow: "0px 0px 8px 23px rgba(143, 255, 0, 0.2);",
+          boxShadow: "0px 0px 8px 23px rgba(143, 255, 0, 0.2)",
         }}
         className="flex flex-col items-center justify-center bg-peavault-primary w-full rounded-3xl aspect-video"
       ></section>
-      <section className="flex flex-row px-8 my-20 w-full aspect-video">
+      <section className="flex flex-row px-8 my-32 w-full aspect-video">
         <div className="w-1/2 flex flex-col items-center justify-center gap-10">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-1 text-peavault-primary">
@@ -94,7 +107,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col my-20 gap-16 w-full">
+      <section className="flex flex-col my-32 gap-16 w-full">
         <div className="flex flex-col items-center gap-2 justify-center font-circular-std text-peavault-primary">
           <p>Features</p>
           <p className="text-5xl font-oatmeal-sans">
@@ -123,7 +136,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col my-20 px-4 gap-28 w-full">
+      <section className="flex flex-col my-32 px-4 gap-28 w-full">
         <div className="flex justify-center w-full">
           <p className="text-5xl font-oatmeal-sans text-center text-peavault-primary">
             How It Works
@@ -142,6 +155,61 @@ export default function Home() {
                 <p>{data.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center my-32 px-20 gap-20 w-full">
+        <div className="flex flex-row items-center w-full">
+          <div className="flex flex-col gap-8">
+            <h4 className="font-oatmeal-sans text-5xl text-peavault-primary">
+              Industries
+            </h4>
+
+            {IndustriesData.map((item, i) => (
+              <div key={`industry-${i}`} className="flex flex-row gap-3">
+                <Image src={CheckIcon} alt="check-icon" />
+                <p className="font-circular-std text-lg">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-row justify-end w-full">
+            <Image src={PictureMosaic} alt="picture-mosaic" />
+          </div>
+        </div>
+        <button className="h-12 w-36 rounded-xl bg-peavault-primary text-black">
+          Learn More
+        </button>
+      </section>
+      <section className="flex flex-row items-center my-32 rounded-3xl bg-peavault-primary w-full aspect-[2]">
+        <div className="relative w-2/5 h-full">
+          <div className="absolute bottom-0 left-0 w-full h-full">
+            <Image
+              className="w-full h-full"
+              src={BannerPerson}
+              alt="person holding a phone and smiling"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col w-3/5 h-full">
+          <div className="flex flex-col items-center justify-center h-5/6 w-full text-black">
+            <h1 className="text-5xl font-oatmeal-sans text-center">
+              Never Buy Or Sell Online Without Using
+            </h1>
+            <div className="flex flex-col gap-2">
+              <p className="text-7xl font-oatmeal-sans text-center font-normal text-black">
+                Peavault
+              </p>
+              <Image src={PeavaultSlashBlack} alt="peavault-slash-black" />
+            </div>
+          </div>
+          <div className="flex items-center justify-center h-1/6 w-full">
+            <div className="flex flex-row gap-11 items-center">
+              <Image src={TwitterIcon} alt="twitter-icon" />
+              <Image src={LinkedInIcon} alt="linkedin-icon" />
+              <Image src={FacebookIcon} alt="facebook-icon" />
+              <Image src={GithubIcon} alt="github-icon" />
+              <Image src={BehanceIcon} alt="behance-icon" />
+            </div>
           </div>
         </div>
       </section>

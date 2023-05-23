@@ -51,3 +51,12 @@ export const HowItWorksData = [
       "Once the terms of the transaction are fulfilled, the funds are released to the seller.",
   },
 ];
+
+export const IndustriesData = [
+  "E-commerce",
+  "Real Estate",
+  "Finance",
+  "Gaming",
+  "Freelancing",
+  "And others ...",
+];
