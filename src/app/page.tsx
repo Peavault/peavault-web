@@ -21,23 +21,23 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between bg-black w-full min-h-screen px-28 text-white">
+    <main className="flex flex-col items-center justify-between bg-black w-full min-h-screen px-4 lg:px-28 text-white">
       <Header />
       <section className="flex flex-col items-center justify-center gap-1 my-24 w-4/5">
-        <h1 className="text-5xl font-oatmeal-sans text-center">
+        <h1 className="text-3xl lg:text-5xl font-oatmeal-sans text-center">
           Never Buy Or Sell Online Without Using
         </h1>
-        <div className="flex flex-col gap-2">
-          <p className="text-7xl font-oatmeal-sans text-center text-peavault-primary">
+        <div className="flex flex-col gap-2 w-min">
+          <p className="text-[2.5rem] lg:text-7xl font-oatmeal-sans text-center text-peavault-primary">
             Peavault
           </p>
-          <Image src={PeavaultSlash} alt="peavault-slash" />
+          <Image className="w-full" src={PeavaultSlash} alt="peavault-slash" />
         </div>
-        <p className="text-xl font-oatmeal-sans text-center">
+        <p className="text-sm lg:text-xl font-oatmeal-sans text-center">
           Peavault is a cutting-edge platform that enables secure and
           trustworthy transactions between parties.
         </p>
-        <p className="text-xl font-oatmeal-sans text-center">
+        <p className="text-sm lg:text-xl font-oatmeal-sans text-center">
           With Peavault, you can transact with confidence, knowing that your
           transactions are executed automatically once all the terms of the
           transaction have been fulfilled by both parties.
@@ -52,16 +52,18 @@ export default function Home() {
         style={{
           boxShadow: "0px 0px 8px 23px rgba(143, 255, 0, 0.2)",
         }}
-        className="flex flex-col items-center justify-center bg-peavault-primary w-full rounded-3xl aspect-video"
+        className="flex flex-col items-center mx-2 lg:mx-0 justify-center bg-peavault-primary w-full rounded-3xl aspect-video"
       ></section>
-      <section className="flex flex-row px-8 my-32 w-full aspect-video">
-        <div className="w-1/2 flex flex-col items-center justify-center gap-10">
+      <section className="flex flex-col lg:flex-row px-8 my-20 lg:my-32 w-full aspect-video">
+        <div className="w-full lg:w-1/2 flex flex-col items-center justify-center gap-10">
           <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-1 text-peavault-primary">
+            <div className="flex flex-col items-center lg:items-start gap-1 text-peavault-primary">
               <p className="text-base font-circular-std">About Peavault</p>
-              <p className="text-5xl font-oatmeal-sans">Buy & Sell With Us</p>
+              <p className="text-3xl lg:text-5xl font-oatmeal-sans">
+                Buy & Sell With Us
+              </p>
             </div>
-            <div className="flex flex-col gap-2 text-xl font-circular-std font-light">
+            <div className="flex flex-col gap-2 text-center lg:text-start text-sm lg:text-xl font-circular-std font-light">
               <p>
                 Our platform is designed to provide a seamless and intuitive
                 user experience, so you can easily set the terms of a
@@ -87,7 +89,7 @@ export default function Home() {
                 secure and trustworthy transactions.
               </p>
             </div>
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row lg:justify-start justify-center gap-2">
               <button className="h-12 w-32 font-circular-std rounded-lg border-2 border-peavault-primary text-peavault-primary">
                 Start for free
               </button>
@@ -107,10 +109,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col my-32 gap-16 w-full">
+      <section className="flex flex-col my-20 lg:my-32 gap-16 w-full">
         <div className="flex flex-col items-center gap-2 justify-center font-circular-std text-peavault-primary">
           <p>Features</p>
-          <p className="text-5xl font-oatmeal-sans">
+          <p className="text-3xl text-center lg:text-5xl font-oatmeal-sans">
             These features makes us the best in the market
           </p>
           <p className="text-[#CACACA] text-center max-w-[900px]">
@@ -119,7 +121,7 @@ export default function Home() {
             confidence. Here are some of the key features of Peavault:
           </p>
         </div>
-        <div className="flex flex-row flex-wrap items-center justify-evenly w-full">
+        <div className="flex flex-row flex-wrap gap-4 items-center justify-evenly w-full">
           {FeaturesData.map((feature, i) => (
             <div
               key={`feature-${i}`}
@@ -136,19 +138,22 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col my-32 px-4 gap-28 w-full">
+      <section className="flex flex-col my-20 lg:my-32 px-4 gap-28 w-full">
         <div className="flex justify-center w-full">
-          <p className="text-5xl font-oatmeal-sans text-center text-peavault-primary">
+          <p className="text-3xl lg:text-5xl font-oatmeal-sans text-center text-peavault-primary">
             How It Works
           </p>
         </div>
-        <div className="flex flex-row items-center h-[500px] w-full">
-          <div className="h-full w-1/2">
+        <div className="flex flex-col gap-24 lg:gap-0 lg:flex-row items-center lg:h-[500px] w-full">
+          <div className="h-full lg:w-1/2">
             <Image src={HowItWorks} alt="how-it-works" />
           </div>
-          <div className="h-full w-1/2 flex flex-col justify-between">
+          <div className="h-full lg:w-1/2 flex flex-col gap-8 lg:gap-0 lg:justify-between">
             {HowItWorksData.map((data, i) => (
-              <div key={`hiw-${i}`} className="flex flex-col gap-2">
+              <div
+                key={`hiw-${i}`}
+                className="flex flex-col text-center lg:text-start gap-2"
+              >
                 <p className="text-xl font-circular-std text-peavault-primary">
                   {data.title}
                 </p>
@@ -158,10 +163,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center my-32 px-20 gap-20 w-full">
-        <div className="flex flex-row items-center w-full">
+      <section className="flex flex-col items-center my-20 lg:my-32 px-4 lg:px-20 gap-20 w-full">
+        <h4 className="lg:hidden block font-oatmeal-sans text-3xl text-peavault-primary">
+          Industries
+        </h4>
+        <div className="flex flex-col-reverse lg:flex-row gap-20 lg:gap-0 items-center w-full">
           <div className="flex flex-col gap-8">
-            <h4 className="font-oatmeal-sans text-5xl text-peavault-primary">
+            <h4 className="hidden lg:block font-oatmeal-sans text-5xl text-peavault-primary">
               Industries
             </h4>
 
@@ -180,9 +188,9 @@ export default function Home() {
           Learn More
         </button>
       </section>
-      <section className="flex flex-row items-center my-32 rounded-3xl bg-peavault-primary w-full aspect-[2]">
-        <div className="relative w-2/5 h-full">
-          <div className="absolute bottom-0 left-0 w-full h-full">
+      <section className="flex flex-col-reverse lg:flex-row items-center my-20 lg:my-32 rounded-3xl bg-peavault-primary w-full lg:aspect-[2]">
+        <div className="lg:relative w-full lg:w-2/5 h-full">
+          <div className="lg:absolute bottom-0 left-0 w-full h-full">
             <Image
               className="w-full h-full"
               src={BannerPerson}
@@ -190,16 +198,20 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col w-3/5 h-full">
-          <div className="flex flex-col items-center justify-center h-5/6 w-full text-black">
-            <h1 className="text-5xl font-oatmeal-sans text-center">
+        <div className="flex flex-col py-9 gap-16 lg:gap-0 lg:pt-0 lg:w-3/5 h-full">
+          <div className="flex flex-col items-center justify-center lg:h-5/6 w-full text-black">
+            <h1 className="text-3xl lg:text-5xl font-oatmeal-sans text-center">
               Never Buy Or Sell Online Without Using
             </h1>
-            <div className="flex flex-col gap-2">
-              <p className="text-7xl font-oatmeal-sans text-center font-normal text-black">
+            <div className="flex flex-col gap-2 w-min">
+              <p className="text-6xl lg:text-7xl font-oatmeal-sans text-center text-black">
                 Peavault
               </p>
-              <Image src={PeavaultSlashBlack} alt="peavault-slash-black" />
+              <Image
+                className="w-full"
+                src={PeavaultSlashBlack}
+                alt="peavault-slash-black"
+              />
             </div>
           </div>
           <div className="flex items-center justify-center h-1/6 w-full">
