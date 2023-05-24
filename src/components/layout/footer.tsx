@@ -27,9 +27,9 @@ const Footer = () => {
             placeholder="Enter your email"
             className="w-64 h-11 rounded-lg border border-[#D0D5DD] bg-white text-black placeholder-[#D0D5DD] px-4"
           />
-          <Button className="h-11 py-[0px] px-[20px] rounded-[8px]">
+          <button className="w-28 h-11 rounded-lg text-black bg-peavault-primary">
             Subscribe
-          </Button>
+          </button>
         </form>
         <p className="text-[#D0D5DD]">© 2023 Peavault. All rights reserved.</p>
       </div>
