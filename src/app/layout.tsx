@@ -16,7 +16,11 @@ export default function RootLayout({
       lang="en"
       className={`${FONTS.oatmeal.variable} ${FONTS.circularStd.variable}`}
     >
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <main className="flex flex-col items-center justify-between bg-black w-full min-h-screen px-4 lg:px-28 text-white">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

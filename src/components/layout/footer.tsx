@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PeavaultLogo from "@/assets/images/peavault-logo.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,12 +12,12 @@ const Footer = () => {
         </h1>
       </div>
       <div className="flex flex-col lg:flex-row items-center gap-8">
-        <p>Overview</p>
-        <p>Features</p>
-        <p>Pricing</p>
-        <p>Help</p>
-        <p>Terms & Conditions</p>
-        <p>Privacy</p>
+        <Link href={"/"}>Overview</Link>
+        <Link href={"/features"}>Features</Link>
+        <Link href={"/pricing"}>Pricing</Link>
+        <Link href={"/help"}>Help</Link>
+        <Link href={"/terms-and-conditions"}>Terms & Conditions</Link>
+        <Link href={"/privacy"}>Privacy</Link>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:pt-8 mt-12 lg:border-t border-t-[#475467] w-full">
         <form className="flex flex-col lg:flex-row items-center gap-4 ">

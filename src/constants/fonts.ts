@@ -9,6 +9,16 @@ const oatmeal = localFont({
 const circularStd = localFont({
   src: [
     {
+      path: "../assets/fonts/circularStd/ProductSans-Thin.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/circularStd/ProductSans-ThinItalic.ttf",
+      weight: "300",
+      style: "italic",
+    },
+    {
       path: "../assets/fonts/circularStd/CircularStd-Book.woff2",
       weight: "400",
       style: "normal",
