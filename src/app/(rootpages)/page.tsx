@@ -83,11 +83,11 @@ export default function Home() {
             <div className="flex flex-row lg:justify-start justify-center gap-2">
               <Button
                 variant="secondary"
-                className="border-2 px-[16px] py-[8px] rounded-lg"
+                className="border-2  py-[12px] rounded-[8px]"
               >
                 Start for free
               </Button>
-              <Button className="px-[16px] py-[8px]">How it Works</Button>
+              <Button className=" py-[12px] rounded-[8px]">How it Works</Button>
             </div>
           </div>
         </div>
