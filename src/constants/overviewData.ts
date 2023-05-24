@@ -2,6 +2,8 @@ import HandCoinIcon from "@/assets/icons/hand-coin-icon.svg";
 import PadlockIcon from "@/assets/icons/padlock-icon.svg";
 import ArrowPictureIcon from "@/assets/icons/arrow-picture-icon.svg";
 import ThreeDotMatrixIcon from "@/assets/icons/three-dot-matrix-icon.svg";
+import ApiIcon from "@/assets/icons/api-icon.svg";
+import LinksIcon from "@/assets/icons/links-icon.svg";
 
 export const FeaturesData = [
   {
@@ -27,6 +29,26 @@ export const FeaturesData = [
     icon: ThreeDotMatrixIcon,
     description:
       "Peavault is built on a robust and scalable infrastructure, so you can transact with confidence even as our platform grows in popularity. Our platform can handle high volumes of transactions without compromising security or performance.",
+  },
+];
+export const BusinessFeaturesData = [
+  {
+    title: "API-as-a-Service",
+    icon: ApiIcon,
+    description:
+      "One of the key features of Peavault is our API-as-a-Service option, which enables businesses to easily integrate our platform into their existing systems. Our platform also offers multi-tier pricing options to suit businesses of all sizes, making Peavault accessible to everyone.",
+  },
+  {
+    title: "Extra layer of security",
+    icon: PadlockIcon,
+    description:
+      "In addition, Peavault provides businesses with an extra layer of security to prevent fraud. Our platform's trust-based transaction process ensures that all transactions are secure and protected from potential fraudsters.",
+  },
+  {
+    title: "Generate payment links",
+    icon: LinksIcon,
+    description:
+      "With Peavault, businesses can generate payment links and send them to customers with ease. Once a payment has been made, you'll receive immediate notification, including the details of the transaction such as item purchased, delivery details, and buyer's information.",
   },
 ];
 

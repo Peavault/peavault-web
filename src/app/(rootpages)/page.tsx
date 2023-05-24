@@ -113,11 +113,11 @@ export default function Home() {
             confidence. Here are some of the key features of Peavault:
           </p>
         </div>
-        <div className="flex flex-row flex-wrap gap-4 items-center justify-evenly w-full">
+        <div className="flex flex-row flex-wrap gap-4 items-stretch justify-evenly w-full h-max">
           {FeaturesData.map((feature, i) => (
             <div
               key={`feature-${i}`}
-              className="w-72 h-[420px] flex flex-col gap-4 p-6 rounded-2xl border border-peavault-primary"
+              className="w-72 flex flex-col gap-4 p-6 rounded-2xl border border-peavault-primary"
             >
               <div className="flex items-center justify-center w-12 h-12 rounded-[10px] bg-peavault-primary">
                 <Image src={feature.icon} alt={feature.title} />
@@ -125,7 +125,9 @@ export default function Home() {
               <p className="font-circular-std text-xl text-peavault-primary">
                 {feature.title}
               </p>
-              <p className="text-base">{feature.description}</p>
+              <p className="text-base font-circular-std font-light">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
