@@ -5,6 +5,11 @@ import ThreeDotMatrixIcon from "@/assets/icons/three-dot-matrix-icon.svg";
 import ApiIcon from "@/assets/icons/api-icon.svg";
 import LinksIcon from "@/assets/icons/links-icon.svg";
 
+import Industry_1 from "@/assets/images/industry-1.png";
+import Industry_2 from "@/assets/images/industry-2.png";
+import Industry_4 from "@/assets/images/industry-4.png";
+import Industry_5 from "@/assets/images/industry-5.png";
+
 export const FeaturesData = [
   {
     title: "Trust-based transactions",
@@ -31,6 +36,7 @@ export const FeaturesData = [
       "Peavault is built on a robust and scalable infrastructure, so you can transact with confidence even as our platform grows in popularity. Our platform can handle high volumes of transactions without compromising security or performance.",
   },
 ];
+
 export const BusinessFeaturesData = [
   {
     title: "API-as-a-Service",
@@ -81,4 +87,37 @@ export const IndustriesData = [
   "Gaming",
   "Freelancing",
   "And others ...",
+];
+
+export const BusinessIndustriesData = [
+  {
+    title: "E-commerce businesses",
+    image: Industry_1,
+    description:
+      "Online retailers can use Peavault to ensure secure transactions between buyers and sellers. The platform's trust-based system allows for a seamless and secure checkout process, reducing the risk of fraud.",
+  },
+  {
+    title: "Freelancers & Consultants",
+    image: Industry_2,
+    description:
+      "Peavault can be used by freelancers and consultants who offer services online. Clients who go mute on you after work has been delivered can no more do if you receive your payments through Peavault.",
+  },
+  {
+    title: "Digital media and content creators:",
+    image: Industry_1,
+    description:
+      "Peavault can be used by digital media and content creators who sell their products or services online. They can use the platform to ensure secure and seamless transactions with their customers.",
+  },
+  {
+    title: "Real Estate & Rental Services",
+    image: Industry_4,
+    description:
+      "Real estate agents and rental services can use Peavault to facilitate secure and seamless transactions between buyers, sellers, and renters. The platform's trust-based system ensures that all parties involved are satisfied with the transaction.",
+  },
+  {
+    title: "Crypto Businesses",
+    image: Industry_5,
+    description:
+      "Peavault can also be used by businesses that deal in cryptocurrencies, such as exchanges and wallets. We reduce the headache of customers who ghost you after selling your products.",
+  },
 ];

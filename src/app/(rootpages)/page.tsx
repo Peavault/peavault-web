@@ -23,7 +23,7 @@ export default function Home() {
           <p className="text-[2.5rem] lg:text-7xl font-oatmeal-sans text-center text-peavault-primary">
             Peavault
           </p>
-          <Image className="w-full" src={PeavaultSlash} alt="peavault-slash" />
+          <Image src={PeavaultSlash} alt="peavault-slash" />
         </div>
         <p className="text-sm lg:text-xl font-oatmeal-sans text-center">
           Peavault is a cutting-edge platform that enables secure and

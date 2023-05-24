@@ -1,7 +1,11 @@
 import Image from "next/image";
 import AboutPeavault from "@/assets/images/about-peavault.png";
-import { BusinessFeaturesData } from "@/constants/overviewData";
+import {
+  BusinessFeaturesData,
+  BusinessIndustriesData,
+} from "@/constants/overviewData";
 import PeavaultBanner from "@/components/peavaultBanner";
+import cn from "classnames";
 
 export default function Business() {
   return (
@@ -118,6 +122,38 @@ export default function Business() {
             industries, especially those that involve online transactions and
             payments. Here are a few examples:
           </p>
+        </div>
+        <div className="flex flex-col gap-32 w-full">
+          {BusinessIndustriesData.map((industry, i) => (
+            <div
+              key={`b-industry-${i}`}
+              className={cn(
+                "flex flex-col items-center lg:gap-28 gap-8",
+                i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse",
+              )}
+            >
+              <div className="flex flex-col gap-4 font-circular-std lg:text-start text-center">
+                <h6 className="text-3xl text-peavault-primary">
+                  {industry.title}
+                </h6>
+                <p className="lg:text-xl font-light lg:leading-9">
+                  {industry.description}
+                </p>
+                <div>
+                  <button className="text-base text-black font-circular-std rounded-xl bg-peavault-primary px-[30px] py-[16px]">
+                    Start as a business
+                  </button>
+                </div>
+              </div>
+              <div className="w-full aspect-square overflow-clip lg:w-[480px] lg:h-[480px] shrink-0 rounded-3xl bg-slate-300">
+                <Image
+                  className="w-full h-full"
+                  src={industry.image}
+                  alt="industry"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <PeavaultBanner />
