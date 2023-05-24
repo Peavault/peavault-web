@@ -11,6 +11,7 @@ import {
   IndustriesData,
 } from "@/constants/overviewData";
 import PeavaultBanner from "@/components/peavaultBanner";
+import Button from "@/components/buttons";
 
 export default function Home() {
   return (
@@ -35,9 +36,7 @@ export default function Home() {
           transaction have been fulfilled by both parties.
         </p>
         <div className="my-14">
-          <button className="text-base text-black font-circular-std rounded-xl bg-peavault-primary w-36 h-14">
-            Start For Free
-          </button>
+          <Button>Start For Free</Button>
         </div>
       </section>
       <section
@@ -82,12 +81,13 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-row lg:justify-start justify-center gap-2">
-              <button className="h-12 w-32 font-circular-std rounded-lg border-2 border-peavault-primary text-peavault-primary">
+              <Button
+                variant="secondary"
+                className="border-2 px-[16px] py-[8px] rounded-lg"
+              >
                 Start for free
-              </button>
-              <button className="h-12 w-40 rounded-xl bg-peavault-primary text-black">
-                How it Works
-              </button>
+              </Button>
+              <Button className="px-[16px] py-[8px]">How it Works</Button>
             </div>
           </div>
         </div>
@@ -178,9 +178,7 @@ export default function Home() {
             <Image src={PictureMosaic} alt="picture-mosaic" />
           </div>
         </div>
-        <button className="h-12 w-36 rounded-xl bg-peavault-primary text-black">
-          Learn More
-        </button>
+        <Button className="py-[12px]">Learn More</Button>
       </section>
       <PeavaultBanner />
     </>

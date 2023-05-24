@@ -3,23 +3,23 @@ import PeavaultLogo from "@/assets/images/peavault-logo.svg";
 import MenuIcon from "@/assets/icons/menu-icon.svg";
 import cn from "classnames";
 import Link from "next/link";
-import Button from "../buttons/button";
+import Button from "../buttons";
 
 const Header = () => {
   return (
     <header className="flex flex-row justify-between items-center w-full py-14">
-      {/* <Link href="/" as={"image"}> */}
-      <div className="flex flex-row gap-2">
-        <Image
-          src={PeavaultLogo}
-          alt="Peavault Logo"
-          className={cn("lg:w-[50px] lg:h-[50px]", "w-[30px] h-[30px]")}
-        />
-        <h1 className="text-2xl lg:text-5xl text-peavault-primary font-oatmeal-sans">
-          Peavault
-        </h1>
-      </div>
-      {/* </Link> */}
+      <Link href="/">
+        <div className="flex flex-row gap-2">
+          <Image
+            src={PeavaultLogo}
+            alt="Peavault Logo"
+            className={cn("lg:w-[50px] lg:h-[50px]", "w-[30px] h-[30px]")}
+          />
+          <h1 className="text-2xl lg:text-5xl text-peavault-primary font-oatmeal-sans">
+            Peavault
+          </h1>
+        </div>
+      </Link>
       <button className="block lg:hidden">
         <Image src={MenuIcon} alt="menu-icon" />
       </button>

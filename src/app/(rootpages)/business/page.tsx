@@ -6,6 +6,7 @@ import {
 } from "@/constants/overviewData";
 import PeavaultBanner from "@/components/peavaultBanner";
 import cn from "classnames";
+import Button from "@/components/buttons";
 
 export default function Business() {
   return (
@@ -21,9 +22,7 @@ export default function Business() {
         </p>
 
         <div className="my-14">
-          <button className="text-base text-black font-circular-std rounded-xl bg-peavault-primary px-[30px] py-[16px]">
-            Start as a business
-          </button>
+          <Button>Start as a business</Button>
         </div>
       </section>
 
@@ -59,9 +58,7 @@ export default function Business() {
               </p>
             </div>
             <div className="flex flex-row lg:justify-start justify-center gap-2">
-              <button className="px-[30px] py-[16px] rounded-xl bg-peavault-primary text-black">
-                See our business plans
-              </button>
+              <Button>See our business plans</Button>
             </div>
           </div>
         </div>
@@ -106,9 +103,7 @@ export default function Business() {
           ))}
         </div>
         <div className="w-full flex items-center justify-center">
-          <button className="text-base text-black font-circular-std rounded-xl bg-peavault-primary px-[30px] py-[16px]">
-            Start as a business
-          </button>
+          <Button>Start as a business</Button>
         </div>
       </section>
 
@@ -140,9 +135,7 @@ export default function Business() {
                   {industry.description}
                 </p>
                 <div>
-                  <button className="text-base text-black font-circular-std rounded-xl bg-peavault-primary px-[30px] py-[16px]">
-                    Start as a business
-                  </button>
+                  <Button>Start as a business</Button>
                 </div>
               </div>
               <div className="w-full aspect-square overflow-clip lg:w-[480px] lg:h-[480px] shrink-0 rounded-3xl bg-slate-300">

@@ -5,6 +5,7 @@ import PricingTabs from "@/components/pricing/pricingTabs";
 import GoodIcon from "@/assets/icons/good-icon.svg";
 import BadIcon from "@/assets/icons/bad-icon.svg";
 import PeavaultBanner from "@/components/peavaultBanner";
+import Button from "@/components/buttons";
 
 export default function Pricing() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
@@ -41,12 +42,12 @@ export default function Pricing() {
               </div>
             </div>
             <div className="w-full flex flex-col gap-3">
-              <button className="w-full h-12 rounded-lg bg-peavault-primary font-bold text-black">
+              <Button className="font-bold h-12 py-0 rounded-[8px]">
                 Get started
-              </button>
-              <button className="w-full h-12 rounded-lg bg-white text-black">
+              </Button>
+              <Button className="bg-white h-12 py-0 rounded-[8px]">
                 Chat to sales
-              </button>
+              </Button>
             </div>
           </div>
           <div className="w-[350px] lg:w-[380px] h-[494px] flex flex-col items-center overflow-clip rounded-2xl border border-peavault-primary">
@@ -73,12 +74,12 @@ export default function Pricing() {
                 </div>
               </div>
               <div className="w-full flex flex-col gap-3">
-                <button className="w-full h-12 rounded-lg bg-peavault-primary font-bold text-black">
+                <Button className="font-bold h-12 py-0 rounded-[8px]">
                   Get started
-                </button>
-                <button className="w-full h-12 rounded-lg bg-white text-black">
+                </Button>
+                <Button className="bg-white h-12 py-0 rounded-[8px]">
                   Chat to sales
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -102,12 +103,12 @@ export default function Pricing() {
               </div>
             </div>
             <div className="w-full flex flex-col gap-3">
-              <button className="w-full h-12 rounded-lg bg-peavault-primary font-bold text-black">
+              <Button className="font-bold h-12 py-0 rounded-[8px]">
                 Get started
-              </button>
-              <button className="w-full h-12 rounded-lg bg-white text-black">
+              </Button>
+              <Button className="bg-white h-12 py-0 rounded-[8px]">
                 Chat to sales
-              </button>
+              </Button>
             </div>
           </div>
         </div>
