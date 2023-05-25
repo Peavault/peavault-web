@@ -27,9 +27,12 @@ const Footer = () => {
             placeholder="Enter your email"
             className="w-64 h-11 rounded-lg border border-[#D0D5DD] bg-white text-black placeholder-[#D0D5DD] px-4"
           />
-          <button className="w-28 h-11 rounded-lg text-black bg-peavault-primary">
+          <Button
+            autoPadding={false}
+            className="w-28 h-11 rounded-[8px] text-black bg-peavault-primary"
+          >
             Subscribe
-          </button>
+          </Button>
         </form>
         <p className="text-[#D0D5DD]">© 2023 Peavault. All rights reserved.</p>
       </div>

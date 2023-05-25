@@ -11,7 +11,7 @@ export default function Pricing() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
   return (
     <>
-      <section className="flex flex-col items-center justify-center gap-1 my-24">
+      <section className="flex flex-col items-center justify-center gap-1 mb-24">
         <div className="w-full flex flex-col py-24 gap-8 items-center">
           <h2 className="text-3xl lg:text-5xl font-oatmeal-sans">
             Pricing Plans
@@ -42,10 +42,16 @@ export default function Pricing() {
               </div>
             </div>
             <div className="w-full flex flex-col gap-3">
-              <Button className="font-bold h-12 py-0 rounded-[8px]">
+              <Button
+                autoPadding={false}
+                className="font-bold h-12 py-0 rounded-[8px]"
+              >
                 Get started
               </Button>
-              <Button className="bg-white h-12 py-0 rounded-[8px]">
+              <Button
+                autoPadding={false}
+                className="bg-white h-12 py-0 rounded-[8px]"
+              >
                 Chat to sales
               </Button>
             </div>
@@ -74,10 +80,16 @@ export default function Pricing() {
                 </div>
               </div>
               <div className="w-full flex flex-col gap-3">
-                <Button className="font-bold h-12 py-0 rounded-[8px]">
+                <Button
+                  autoPadding={false}
+                  className="font-bold h-12 py-0 rounded-[8px]"
+                >
                   Get started
                 </Button>
-                <Button className="bg-white h-12 py-0 rounded-[8px]">
+                <Button
+                  autoPadding={false}
+                  className="bg-white h-12 py-0 rounded-[8px]"
+                >
                   Chat to sales
                 </Button>
               </div>
@@ -103,10 +115,16 @@ export default function Pricing() {
               </div>
             </div>
             <div className="w-full flex flex-col gap-3">
-              <Button className="font-bold h-12 py-0 rounded-[8px]">
+              <Button
+                autoPadding={false}
+                className="font-bold h-12 py-0 rounded-[8px]"
+              >
                 Get started
               </Button>
-              <Button className="bg-white h-12 py-0 rounded-[8px]">
+              <Button
+                autoPadding={false}
+                className="bg-white h-12 py-0 rounded-[8px]"
+              >
                 Chat to sales
               </Button>
             </div>
