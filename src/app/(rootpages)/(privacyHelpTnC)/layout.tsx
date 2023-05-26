@@ -4,6 +4,10 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
+    href: "/help",
+    label: "Help",
+  },
+  {
     href: "/privacy",
     label: "Privacy",
   },

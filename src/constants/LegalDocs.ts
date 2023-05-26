@@ -64,3 +64,27 @@ Contact Us:
 If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us at [info@peavault.io].
 By using the Peavault Platform, you consent to the collection, use, and storage of your personal information as described in this Privacy Policy. Please read this Privacy Policy carefully and ensure that you understand and accept it before using the Platform.
 `;
+
+export const PeavaultHelp = `
+:Welcome to the Peavault Help Center, your go-to resource for all your questions and concerns. We understand that using a new platform can sometimes raise questions, and we're here to provide you with the support you need every step of the way.
+Our dedicated support team is committed to ensuring your experience with Peavault is smooth and hassle-free. Whether you have inquiries about our features, need assistance with setting up your account, or have encountered an issue, we're just a click away.
+Why choose Peavault Help Center?
+
+Knowledge Base:
+Our comprehensive Knowledge Base is filled with articles, guides, and tutorials that cover a wide range of topics. From getting started with Peavault to troubleshooting common issues, you'll find step-by-step instructions and helpful tips to navigate the platform with ease.
+
+Frequently Asked Questions (FAQs):
+We've compiled a list of frequently asked questions to address common queries. Browse through our FAQs to find quick answers to your most pressing concerns. If you don't find what you're looking for, our support team is ready to assist you.
+
+Live Chat Support:
+Have a specific question or need immediate assistance? Our Live Chat Support is available during business hours to provide real-time help. Our friendly agents are knowledgeable and dedicated to resolving your queries promptly.
+
+Email Support:
+If you prefer a more detailed or asynchronous conversation, you can reach out to our support team via email. Simply send us your question or concern, and we'll get back to you as soon as possible with a helpful response.
+
+Community Forum:
+Connect with other Peavault users, share insights, and learn from their experiences on our Community Forum. Engage in discussions, ask questions, and collaborate with like-minded individuals who are also utilizing the power of Peavault.
+
+At Peavault, we believe in building strong relationships with our users, and that starts with providing exceptional support. We're here to ensure you have a seamless and enjoyable experience with our platform, and we'll go above and beyond to assist you in any way we can.
+Visit our Help Center today to access our resources, get answers to your questions, and find the support you need. Your success is our priority, and we're dedicated to helping you every step of the way.
+`;

@@ -12,7 +12,7 @@ export default function TermsAndConditions() {
             <span key={index}>
               <span className="font-normal">
                 {paragraph.split(":")[0]}
-                {index > 0 && ":"}
+                {index > 0 && paragraph.split(":")[1] && ":"}
               </span>
               {paragraph.split(":")[1]}
               <br />
