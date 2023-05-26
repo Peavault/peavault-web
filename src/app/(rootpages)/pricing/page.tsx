@@ -21,7 +21,7 @@ export default function Pricing() {
             onClick={(id) => setSelectedTab(id)}
           />
         </div>
-        <div className="w-full flex flex-row gap-8 flex-wrap items-end">
+        <div className="w-full flex flex-row gap-8 flex-wrap justify-center items-end">
           <div className="w-[350px] lg:w-[380px] h-[450px] flex flex-col items-center justify-between p-8 rounded-2xl border border-peavault-primary">
             <p className="text-5xl font-circular-std font-bold">$10/mth</p>
             <p className="text-xl font-bold text-peavault-primary">
