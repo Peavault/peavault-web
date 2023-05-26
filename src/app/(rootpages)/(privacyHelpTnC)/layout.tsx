@@ -26,7 +26,7 @@ export default function RootLayout({
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row w-full gap-4">
+      <div className="flex flex-col lg:flex-row w-full min-h-screen gap-4">
         <aside className="w-full lg:w-[280px] flex flex-row lg:flex-col justify-center lg:justify-start gap-1 font-circular-std pb-8 lg:pt-20">
           {links.map((link) => (
             <Link href={link.href} key={link.href}>
