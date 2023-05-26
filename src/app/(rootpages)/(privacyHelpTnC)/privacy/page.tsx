@@ -10,7 +10,10 @@ export default function Privacy() {
         <p className="font-circular-std text-base lg:text-xl font-light lg:leading-[46px]">
           {PrivacyPolicy.split("\n\n").map((paragraph, index) => (
             <span key={index}>
-              <span className="font-normal">{paragraph.split(":")[0]}</span>
+              <span className="font-normal">
+                {paragraph.split(":")[0]}
+                {index > 0 && ":"}
+              </span>
               {paragraph.split(":")[1]}
               <br />
               <br />
