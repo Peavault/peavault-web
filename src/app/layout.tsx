@@ -35,13 +35,8 @@ export default function RootLayout({
       lang="en"
       className={`${FONTS.oatmeal.variable} ${FONTS.circularStd.variable}`}
     >
-      {/* <head>
-        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
-      </head> */}
-      <body suppressHydrationWarning={true}>
-        <main className="flex flex-col items-center justify-between bg-black w-full min-h-screen px-4 lg:px-28 text-white">
-          {children}
-        </main>
+      <body suppressHydrationWarning={true} className="bg-black ">
+        {children}
       </body>
     </html>
   );

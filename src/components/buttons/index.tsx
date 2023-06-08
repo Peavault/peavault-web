@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React, { ButtonHTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   autoPadding?: boolean;
@@ -14,14 +15,16 @@ const Button = ({
   return (
     <button
       {...props}
-      className={classNames(
+      className={twMerge(
+        classNames(
+          "text-base font-circular-std",
+          autoPadding && "px-[30px] py-[16px] rounded-xl",
+          variant === "primary" && "text-black bg-peavault-primary",
+          variant === "secondary" &&
+            "bg-transparent border border-peavault-primary text-peavault-primary",
+          variant === "tertiary" && "text-peavault-primary p-0",
+        ),
         props.className,
-        "text-base font-circular-std",
-        autoPadding && "px-[30px] py-[16px] rounded-xl",
-        variant === "primary" && "text-black bg-peavault-primary",
-        variant === "secondary" &&
-          "bg-transparent border border-peavault-primary text-peavault-primary",
-        variant === "tertiary" && "text-peavault-primary p-0",
       )}
     >
       {props.children}

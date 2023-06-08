@@ -94,7 +94,7 @@ export default function Home() {
         <div className="relative w-1/2">
           <div className="absolute bottom-0 left-0 w-full h-full">
             <Image
-              className="h-full"
+              className="h-full object-contain overflow-visible"
               src={AboutPeavault}
               alt="about-peavault"
             />
