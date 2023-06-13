@@ -10,9 +10,9 @@ import BehanceIcon from "@/assets/icons/behance-icon.svg";
 
 const PeavaultBanner = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center my-20 lg:my-32 rounded-3xl bg-peavault-primary w-full lg:aspect-[2]">
-      <div className="lg:relative w-full lg:w-2/5 h-full">
-        <div className="lg:absolute bottom-0 left-0 w-full h-full">
+    <section className="relative flex flex-col-reverse lg:flex-row items-center justify-end my-20 lg:my-32 rounded-3xl bg-peavault-primary w-full lg:aspect-[2]">
+      <div className="lg:absolute -left-10 bottom-0 w-full lg:w-[55%] h-auto">
+        <div className="w-full h-full">
           <Image
             className="w-full h-full"
             src={BannerPerson}
@@ -22,7 +22,7 @@ const PeavaultBanner = () => {
       </div>
       <div className="flex flex-col py-9 gap-16 lg:gap-0 lg:pt-0 lg:w-3/5 h-full">
         <div className="flex flex-col items-center justify-center lg:h-5/6 w-full text-black">
-          <h1 className="text-3xl lg:text-5xl font-oatmeal-sans text-center">
+          <h1 className="text-3xl lg:text-5xl lg:w-full w-[260px] font-normal font-oatmeal-sans text-center">
             Never Buy Or Sell Online Without Using
           </h1>
           <div className="flex flex-col gap-2 w-min">

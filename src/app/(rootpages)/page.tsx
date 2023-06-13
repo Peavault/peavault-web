@@ -139,7 +139,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-24 lg:gap-0 lg:flex-row items-center lg:h-[500px] w-full">
-          <div className="h-full lg:w-1/2">
+          <div className="h-full lg:w-1/2 pr-8">
             <Image src={HowItWorks} alt="how-it-works" />
           </div>
           <div className="h-full lg:w-1/2 flex flex-col gap-8 lg:gap-0 lg:justify-between">

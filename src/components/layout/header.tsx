@@ -44,10 +44,10 @@ const Header = () => {
           </h1>
         </div>
       </Link>
-      <button onClick={() => setIsOpen(true)} className="block lg:hidden">
+      <button onClick={() => setIsOpen(true)} className="block xl:hidden">
         <Image src={MenuIcon} alt="menu-icon" />
       </button>
-      <div className="hidden lg:flex flex-row items-center justify-end gap-44">
+      <div className="hidden xl:flex flex-row items-center justify-end gap-44">
         <div className="flex flex-row items-center gap-10">
           {links.map((link, i) => (
             <Link key={i} href={link.href}>
@@ -67,12 +67,12 @@ const Header = () => {
             initial={{ right: -324 }}
             animate={{ right: isOpen ? -16 : -324 }}
             exit={{ right: -324 }}
-            className="lg:hidden fixed top-0 h-screen w-[300px] border-l border-peavault-primary/25 bg-black z-50"
+            className="xl:hidden fixed top-0 h-screen w-[300px] border-l border-peavault-primary/25 bg-black z-50"
           >
             <div className="h-28 w-full flex flex-col justify-center items-end pr-8">
               <button
                 onClick={() => setIsOpen((prev) => !prev)}
-                className="lg:hidden w-10 h-10"
+                className="w-10 h-10"
               >
                 <Image src={MenuIcon} alt="menu-icon" />
               </button>
